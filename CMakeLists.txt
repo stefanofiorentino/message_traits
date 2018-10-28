@@ -11,3 +11,5 @@ include_directories(libs/dispatcher/include)
 add_executable(message_traits
         libs/dispatcher/include/message_traits.hpp
         libs/dispatcher/notifier.hpp src/main.cpp)
+
+install(TARGETS message_traits DESTINATION bin)
